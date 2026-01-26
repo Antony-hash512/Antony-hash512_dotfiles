@@ -45,7 +45,6 @@ stow */
 ### Modules Description & Nuances
 
 #### Fish 🐟
-My comprehensive configuration for the Fish shell.
 
 **Nuances:**
 - **External Functions:** The core functions for specific functionalities are not stored directly in this repo's files but are pulled from a separate repository as a submodule.
@@ -142,7 +141,6 @@ stow */
 ### Описание модулей и нюансы
 
 #### Fish 🐟
-Моя подробная конфигурация для командной оболочки Fish.
 
 **Нюансы:**
 - **Внешние функции:** Основные функции вынесены в отдельный репозиторий и подключены сюда в виде сабмодуля (submodule).
