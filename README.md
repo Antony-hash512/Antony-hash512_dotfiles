@@ -9,6 +9,14 @@
 ### Easy Web Access
 The repository structure corresponds to the actual file paths relative to your home directory (when using Stow). You can simply browse the repository on GitHub/GitLab, find the config file you are interested in (e.g., `neovim/.config/nvim/init.lua`), and copy the content directly to your local files.
 
+### Directory Structure & Hidden Files
+Each module in this repository mirrors the actual file structure of your `$HOME` directory. For instance, the file `neovim/.config/nvim/init.lua` maps effectively to `~/.config/nvim/init.lua`.
+
+**Note on Hidden Files:**
+Files and directories starting with a dot (`.`) are hidden by default in Linux.
+- **Terminal:** Use `ls -a` to see them.
+- **File Managers:** In most GUI managers (GNOME Files, Dolphin, Thunar), press `Ctrl+H` to toggle visibility.
+
 ### Installation via GNU Stow
 
 You can install configuration modules individually or all at once using GNU Stow.
@@ -41,12 +49,18 @@ My comprehensive configuration for the Fish shell.
 A modular Git configuration setup.
 
 **Integration:**
-To utilize this configuration, you simply need to include the file in your main config. Add the following lines to the beginning or end of your global `.gitconfig` or `~/.config/git/config`:
+To utilize this configuration, you simply need to include the file in your main config.
 
+Don't forget to add the following lines:
 ```ini
 [include]
     path = ~/.config/git/antony-hash512.config
 ```
+to the beginning or the end of your global git config file `~/.gitconfig` or `~/.config/git/config`.
+
+**Note:** Git configurations follow a "last one wins" rule:
+- If you place this at the end of the file, these settings will override any previous configurations.
+- If you place this at the beginning, your existing settings below will take precedence.
 
 **Why is this necessary?**
 Git configuration files often mix purely structural/preference settings (aliases, color settings, diff tools) with highly personalized data (user email, names, signing keys). By keeping this repository's config separate and using the `[include]` directive, we avoid hardcoding personal identity information into the shared config. This allows you to adopt the "functional" settings while keeping your identity private and local in your main `.gitconfig`.
@@ -54,17 +68,26 @@ Git configuration files often mix purely structural/preference settings (aliases
 #### Neovim 📝
 A lightweight, efficient Neovim configuration written in Lua.
 - **Path:** `.config/nvim/init.lua`
-- It is designed to be easily readable via web browser so you can copy specific snippets (mappings, plugin setups, etc.) directly into your own `init.lua` without needing to fork the whole setup.
+- It is designed to be easily readable via web browser so you can copy specific snippets (mappings, plugin setups, etc.) directly into your own `init.lua` without needing to fork the whole setup. However, you can also install it entirely. In this case, you need to install plugins using Packer:
+  1. Install Packer:
+     ```bash
+     git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+     ```
+  2. Open Neovim and run `:PackerSync` to install and synchronize all plugins.
 
 #### MPV 🎬
 Configuration for the MPV media player.
 - **Path:** `.config/mpv/mpv.conf`
 - Includes optimized settings for high-quality video playback and UI improvements.
+- **Scripts:** Includes `force_external.lua` (in `.config/mpv/scripts/`), which allows automatically loading matching subtitles and audio tracks from external subdirectories.
 
 #### Gemini + Antigravity 🤖
 Context and memory files for AI Assistants (Gemini, Antigravity).
 - **Path:** `.gemini/GEMINI.md`
 - Contains persistent instructions and context for AI sessions.
+- **IDE Configuration:** Includes a lightweight configuration (similar to VS Code's `settings.json`) optimized for AI-assisted coding.
+  - **Spellchecking:** Ensure you have spellchecking plugins installed.
+  - **Compatibility:** This config is designed for this environment but is largely standard and compatible with other VS Code-based IDEs.
 
 
 
@@ -74,6 +97,14 @@ Context and memory files for AI Assistants (Gemini, Antigravity).
 
 ### Простое использование (Copy-Paste)
 Структура репозитория специально сделана прозрачной. Вы можете просто открыть нужный конфиг в браузере (например, зайти в папку `neovim` -> `.config` -> `nvim` -> `init.lua`) и скопировать любой понравившийся фрагмент кода или настроек прямо в свои конфиги. Нет необходимости клонировать весь репозиторий, если вам нужна только пара настроек.
+
+### Структура директорий и скрытые файлы
+Каждый модуль в этом репозитории зеркалирует реальную структуру файлов вашего домашнего каталога (`$HOME`). Например, файл `neovim/.config/nvim/init.lua` соответствует пути `~/.config/nvim/init.lua`.
+
+**Скрытые файлы:**
+Файлы и папки, начинающиеся с точки (`.`), по умолчанию скрыты в Linux.
+- **В терминале:** Используйте команду `ls -a`, чтобы увидеть их.
+- **В файловых менеджерах:** В большинстве менеджеров (Nautilus, Dolphin, Thunar) нажмите `Ctrl+H` для переключения видимости.
 
 ### Установка через GNU Stow
 
@@ -107,12 +138,18 @@ stow */
 Модульная конфигурация Git.
 
 **Подключение:**
-Для использования этого конфига необходимо добавить инструкцию include в ваш основной файл настроек. Вставьте следующее в начало или конец вашего `~/.gitconfig` или `~/.config/git/config`:
+Для использования этого конфига необходимо добавить инструкцию include в ваш основной файл настроек.
 
+Не забудьте добавить данную пару строк:
 ```ini
 [include]
     path = ~/.config/git/antony-hash512.config
 ```
+в начало или конец вашего глобального git-конфига `~/.gitconfig` или `~/.config/git/config`.
+
+**Примечание:** В конфигурациях Git действует правило "последний побеждает" (last one wins):
+- Если вы поместите это в конец файла, эти настройки переопределят любые предыдущие конфигурации.
+- Если вы поместите это в начало, ваши существующие настройки ниже будут иметь приоритет.
 
 **Зачем это нужно (Развернуто):**
 В Git конфигурационных файлах часто смешиваются общие настройки (алиасы, цвета, настройки diff/merge, поведение команд) и сугубо персональные данные (имя пользователя, email, ключи подписи GPG/SSH). 
@@ -121,16 +158,24 @@ stow */
 #### Neovim 📝
 Легковесная и эффективная конфигурация Neovim на Lua.
 - **Путь к файлу:** `.config/nvim/init.lua`
-- Конфиг написан так, что вы можете просто открыть его в веб-интерфейсе репозитория, просмотреть код и скопировать нужные куски (биндинги клавиш, настройки плагинов) к себе, не устанавливая весь "dotfiles" целиком.
-
+- Конфиг написан так, что вы можете просто открыть его в веб-интерфейсе репозитория, просмотреть код и скопировать нужные куски (биндинги клавиш, настройки плагинов) к себе, не устанавливая весь "dotfiles" целиком. Но можно и установить целиком, при этом нужно установить плагины при помощи Packer:
+ 1. Установите Packer:
+   ```bash
+   git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+   ```
+2. Запустите Neovim и выполните команду `:PackerSync` для установки и синхронизации всех плагинов.
 #### MPV 🎬
 Конфиг для медиаплеера MPV.
 - **Путь к файлу:** `.config/mpv/mpv.conf`
 - Включает оптимизированные настройки для высокого качества воспроизведения и улучшения интерфейса.
+- **Скрипты:** Включен скрипт `force_external.lua` (в `.config/mpv/scripts/`), который позволяет автоматически подгружать субтитры и аудиодорожки из внешних подкаталогов.
 
 #### Gemini + Antigravity 🤖
 Файлы контекста и "памяти" для AI-ассистентов (Gemini, Antigravity).
 - **Путь к файлу:** `.gemini/GEMINI.md`
 - Содержит инструкции и правила, которые загружаются в контекст AI.
+- **Конфигурация IDE:** Модуль содержит небольшой конфиг (по типу `settings.json` для VS Code), оптимизированный для работы с AI.
+  - **Проверка орфографии:** Не забудьте установить плагины для проверки правописания (русский и английский словари).
+  - **Совместимость:** Конфигурация по большей части стандартная и скорее всего подойдет для других IDE на базе VS Code.
 
 
