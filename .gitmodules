@@ -1,0 +1,4 @@
+[submodule "fish/.config/fish"]
+	path = fish/.config/fish
+	url = https://github.com/Antony-hash512/Fish_functions_collection.git
+	branch = master
