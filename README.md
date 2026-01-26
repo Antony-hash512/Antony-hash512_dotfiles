@@ -1,4 +1,4 @@
-# Dotfiles / Дотфайлы
+# My Dotfiles / Мои дотфайлы
 
 [English](#english) | [Русский](#русский)
 
