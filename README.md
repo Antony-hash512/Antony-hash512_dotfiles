@@ -81,6 +81,7 @@ A lightweight, efficient Neovim configuration written in Lua.
      git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
      ```
   2. Open Neovim and run `:PackerSync` to install and synchronize all plugins.
+- **Arrow Keys vs HJKL (pay attention):** The file `keymaps/disable_arrows.lua` disables arrow keys in Normal/Visual modes to force the habit of using `hjkl` navigation. If you prefer using arrow keys, **do not copy this file** (or delete it if installed).
 
 #### MPV 🎬
 Configuration for the MPV media player.
@@ -95,6 +96,9 @@ Context and memory files for AI Assistants (Gemini, Antigravity).
 - **IDE Configuration:** Includes a lightweight configuration (similar to VS Code's `settings.json`) optimized for AI-assisted coding.
   - **Spellchecking:** Ensure you have spellchecking plugins installed.
   - **Compatibility:** This config is designed for this environment but is largely standard and compatible with other VS Code-based IDEs.
+
+#### Legacy 🕰️
+Contains basic configurations for tools I used previously and only access occasionally. The configs here are minimal.
 
 
 
@@ -178,6 +182,7 @@ stow */
    git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
    ```
 2. Запустите Neovim и выполните команду `:PackerSync` для установки и синхронизации всех плагинов.
+- **Стрелки против HJKL (имейте в виду):** Файл `keymaps/disable_arrows.lua` отключает использование стрелок в нормальном и визуальном режимах, чтобы приучить к навигации через `hjkl`. Если вам удобнее использовать стрелки, **не копируйте этот файл** (или удалите его, если он уже установлен).
 #### MPV 🎬
 Конфиг для медиаплеера MPV.
 - **Путь к файлу:** `.config/mpv/mpv.conf`
@@ -191,5 +196,8 @@ stow */
 - **Конфигурация IDE:** Модуль содержит небольшой конфиг (по типу `settings.json` для VS Code), оптимизированный для работы с AI.
   - **Проверка орфографии:** Не забудьте установить плагины для проверки правописания (русский и английский словари).
   - **Совместимость:** Конфигурация по большей части стандартная и скорее всего подойдет для других IDE на базе VS Code.
+
+#### Legacy 🕰️
+Содержит базовые конфигурации для инструментов, которые я использовал ранее и к которым обращаюсь лишь изредка. Конфиги здесь минимальны.
 
 
