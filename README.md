@@ -72,6 +72,11 @@ to the beginning or the end of your global git config file `~/.gitconfig` or `~/
 **Why is this necessary?**
 Git configuration files often mix purely structural/preference settings (aliases, color settings, diff tools) with highly personalized data (user email, names, signing keys). By keeping this repository's config separate and using the `[include]` directive, we avoid hardcoding personal identity information into the shared config. This allows you to adopt the "functional" settings while keeping your identity private and local in your main `.gitconfig`.
 
+**Dependencies & Tools:**
+- **[git-delta](https://github.com/dandavison/delta):** Used as the default pager for beautiful, syntax-highlighted diffs.
+- **Meld:** Set as the default visual diff tool.
+- **CLI environments (SSH/VPS/TTY):** If you're working on a headless system/VPS/remote machine via SSH or only have a bare TTY or don't want to leave the terminal, open `antony-hash512.config`, comment out `tool = meld`, and uncomment `tool = vimdiff` or `tool = nvimdiff` to ensure diffs work correctly without a GUI.
+
 #### Neovim 📝
 A lightweight, efficient Neovim configuration written in Lua.
 - **Path:** `.config/nvim/init.lua`
@@ -172,6 +177,11 @@ stow */
 **Зачем это нужно (Развернуто):**
 В Git конфигурационных файлах часто смешиваются общие настройки (алиасы, цвета, настройки diff/merge, поведение команд) и сугубо персональные данные (имя пользователя, email, ключи подписи GPG/SSH). 
 Я использую подход с `[include]`, потому что в противном случае пришлось бы "зашивать" свои личные данные в публичный файл конфига, либо вычищать их каждый раз. Подключая файл через include, вы получаете все мои настройки алиасов и инструментов, но ваши личные данные (имя, почта) остаются в вашем локальном `.gitconfig` и имеют приоритет (или наоборот, дополняются), что позволяет безопасно использовать этот конфиг любому пользователю.
+
+**Зависимости и инструменты:**
+- **[git-delta](https://github.com/dandavison/delta):** Используется как стандартный пейджер для красивого отображения diff с подсветкой синтаксиса.
+- **Meld:** Установлен как инструмент сравнения по умолчанию.
+- **Работа в консоли (SSH/VPS/TTY):** Если вы работаете на удаленной машине, headless-системе или в чистом TTY или просто не хотите покидать терминал, загляните в `antony-hash512.config`, закомментируйте `tool = meld` и раскомментируйте `tool = vimdiff` или `tool = nvimdiff`. Это позволит комфортно сравнивать файлы без использования графического интерфейса.
 
 #### Neovim 📝
 Легковесная и эффективная конфигурация Neovim на Lua.
