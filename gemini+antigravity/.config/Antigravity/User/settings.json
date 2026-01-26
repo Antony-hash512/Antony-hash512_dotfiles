@@ -1,0 +1,34 @@
+{
+  // --- Внешний вид ---
+  "workbench.colorTheme": "Monokai",
+  "window.commandCenter": true,
+  // --- Редактор ---
+  "editor.wordWrap": "off",
+  "[markdown]": {
+    "editor.wordWrap": "on"
+  },
+  "[plaintext]": {
+    "editor.wordWrap": "on"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  // --- Git ---
+  "git.openRepositoryInParentFolders": "always",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  // --- Языки и Обновления ---
+  "python.languageServer": "Default",
+  "update.releaseTrack": "prerelease",
+  // --- Орфография (Code Spell Checker) ---
+  "cSpell.language": "en,ru",
+  "cSpell.enabledLanguageIds": [
+    "markdown",
+    "plaintext",
+    "yaml",
+    "json",
+    "html",
+    "xml",
+  ],
+  "cSpell.diagnosticLevel": "Hint",
+  "cSpell.allowCompoundWords": true
+  // Все настройки cursor.* удалены, так как они не работают в Antigravity
+}
