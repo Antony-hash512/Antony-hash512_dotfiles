@@ -81,7 +81,7 @@ A lightweight, efficient Neovim configuration written in Lua.
      git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
      ```
   2. Open Neovim and run `:PackerSync` to install and synchronize all plugins.
-- **Arrow Keys vs HJKL (pay attention):** The file `keymaps/disable_arrows.lua` disables arrow keys in Normal/Visual modes to force the habit of using `hjkl` navigation. If you prefer using arrow keys, **do not copy this file** (or delete it if installed).
+> ⚠️ **Arrow Keys vs HJKL (pay attention):** The file `keymaps/disable_arrows.lua` disables arrow keys in Normal/Visual modes to force the habit of using `hjkl` navigation. If you prefer using arrow keys, **do not copy this file** (or delete it if installed).
 
 #### MPV 🎬
 Configuration for the MPV media player.
@@ -182,7 +182,7 @@ stow */
    git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
    ```
 2. Запустите Neovim и выполните команду `:PackerSync` для установки и синхронизации всех плагинов.
-- **Стрелки против HJKL (имейте в виду):** Файл `keymaps/disable_arrows.lua` отключает использование стрелок в нормальном и визуальном режимах, чтобы приучить к навигации через `hjkl`. Если вам удобнее использовать стрелки, **не копируйте этот файл** (или удалите его, если он уже установлен).
+> ⚠️ **Стрелки против HJKL (имейте в виду):** Файл `keymaps/disable_arrows.lua` отключает использование стрелок в нормальном и визуальном режимах, чтобы приучить к навигации через `hjkl`. Если вам удобнее использовать стрелки, **не копируйте этот файл** (или удалите его, если он уже установлен).
 #### MPV 🎬
 Конфиг для медиаплеера MPV.
 - **Путь к файлу:** `.config/mpv/mpv.conf`
