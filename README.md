@@ -14,12 +14,12 @@ Each module in this repository mirrors the actual file structure of your `$HOME`
 
 **Note on Hidden Files:**
 Files and directories starting with a dot (`.`) are hidden by default in Linux.
-- **Terminal:** Use `ls -a` to see them.
+- **Terminal:** Use `ls -a` / `tree -a` to see them.
 - **File Managers:** In most GUI managers (GNOME Files, Dolphin, Thunar), press `Ctrl+H` to toggle visibility.
 - **Console File Managers:**
-  - **ranger:** Press `zh`
-  - **lf:** Press `.` (by default, may vary with config) or `zh`
+  - **ranger:** Press `z`, then `h`.
   - **yazi:** Press `.`
+  - **lf:** Press `z`, then `h` (if it doesn't work, try `.`)
 - **Dual-Pane File Managers:**
   - **Midnight Commander (mc):** Press `Alt + .` (or `Esc + .`)
   - **Double Commander:** Press `Ctrl + .` or `Ctrl + Shift + .`
