@@ -16,6 +16,14 @@ Each module in this repository mirrors the actual file structure of your `$HOME`
 Files and directories starting with a dot (`.`) are hidden by default in Linux.
 - **Terminal:** Use `ls -a` to see them.
 - **File Managers:** In most GUI managers (GNOME Files, Dolphin, Thunar), press `Ctrl+H` to toggle visibility.
+- **Console File Managers:**
+  - **ranger:** Press `zh`
+  - **lf:** Press `.` (by default, may vary with config) or `zh`
+  - **yazi:** Press `.`
+- **Dual-Pane File Managers:**
+  - **Midnight Commander (mc):** Press `Alt + .` (or `Esc + .`)
+  - **Double Commander:** Press `Ctrl + .` or `Ctrl + Shift + .`
+  - **Far2l:** `F9` -> `Options` -> `Panel settings` -> `Show hidden files`
 
 ### Installation via GNU Stow
 
@@ -103,8 +111,16 @@ Context and memory files for AI Assistants (Gemini, Antigravity).
 
 **Скрытые файлы:**
 Файлы и папки, начинающиеся с точки (`.`), по умолчанию скрыты в Linux.
-- **В терминале:** Используйте команду `ls -a`, чтобы увидеть их.
+- **В терминале:** Используйте команду `ls -a` / `tree -a`, чтобы увидеть их.
 - **В файловых менеджерах:** В большинстве менеджеров (Nautilus, Dolphin, Thunar) нажмите `Ctrl+H` для переключения видимости.
+- **В консольных менеджерах:**
+  - **ranger:** Нажмите `z`, затем `h`.
+  - **yazi:** Нажмите `.`
+  - **lf:** Нажмите `z`, затем `h` (если не работает, попробуйте `.`)
+- **Двухпанельные менеджеры:**
+  - **Midnight Commander (mc):** Нажмите `Alt + .` (или `Esc + .`)
+  - **Double Commander:** Нажмите `Ctrl + .` или `Ctrl + Shift + .`
+  - **Far2l:** `F9` -> `Options` -> `Panel settings` -> `Show hidden files`
 
 ### Установка через GNU Stow
 
