@@ -102,6 +102,17 @@ Context and memory files for AI Assistants (Gemini, Antigravity).
   - **Spellchecking:** Ensure you have spellchecking plugins installed.
   - **Compatibility:** This config is designed for this environment but is largely standard and compatible with other VS Code-based IDEs.
 
+#### Templates 📄
+A collection of boilerplates and skeletons for quickly creating new files.
+- **Path:** `~/Templates/`
+- Includes templates for:
+  - Shell scripts (bash, sh, fish)
+  - Python scripts
+  - HTML and XML files
+  - Desktop entries (`.desktop`)
+  - Licenses (MIT, GPLv3)
+- **Integration:** These templates automatically appear in the "Create New Document" context menu in many Linux file managers (GNOME Files, Dolphin, Thunar).
+
 #### Legacy 🕰️
 Contains basic configurations for tools I used previously and only access occasionally. The configs here are minimal.
 
@@ -206,6 +217,17 @@ stow */
 - **Конфигурация IDE:** Модуль содержит небольшой конфиг (по типу `settings.json` для VS Code), оптимизированный для работы с AI.
   - **Проверка орфографии:** Не забудьте установить плагины для проверки правописания (русский и английский словари).
   - **Совместимость:** Конфигурация по большей части стандартная и скорее всего подойдет для других IDE на базе VS Code.
+
+#### Шаблоны (Templates) 📄
+Коллекция заготовок и скелетов файлов для быстрого создания новых документов.
+- **Путь:** `~/Templates/`
+- Содержит шаблоны для:
+  - Скриптов (bash, sh, fish)
+  - Python-скриптов
+  - HTML и XML файлов
+  - Файлов рабочего стола (`.desktop`)
+  - Лицензий (MIT, GPLv3)
+- **Интеграция:** Эти файлы автоматически появляются в контекстном меню "Создать документ" (Create New Document) в большинстве файловых менеджеров Linux (Nautilus, Dolphin, Thunar).
 
 #### Legacy 🕰️
 Содержит базовые конфигурации для инструментов, которые я использовал ранее и к которым обращаюсь лишь изредка. Конфиги здесь минимальны.
