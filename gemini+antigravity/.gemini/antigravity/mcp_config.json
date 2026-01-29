@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "context7": {
+      "serverUrl": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "you can get it here: https://context7.com/dashboard"
+      }
+    }
+  }
+}
