@@ -101,6 +101,8 @@ Context and memory files for AI Assistants (Gemini, Antigravity).
 - **IDE Configuration:** Includes a lightweight configuration (similar to VS Code's `settings.json`) optimized for AI-assisted coding.
   - **Spellchecking:** Ensure you have spellchecking plugins installed.
   - **Compatibility:** This config is designed for this environment but is largely standard and compatible with other VS Code-based IDEs.
+- **MCP:** A ready-made MCP server configuration for Contex7 has also been added for Antigravity (you only need to manually insert your user API key; instead of the key in the configuration, there is a link to the page where you can obtain it).
+
 
 #### Templates 📄
 A collection of boilerplates and skeletons for quickly creating new files.
@@ -217,6 +219,7 @@ stow */
 - **Конфигурация IDE:** Модуль содержит небольшой конфиг (по типу `settings.json` для VS Code), оптимизированный для работы с AI.
   - **Проверка орфографии:** Не забудьте установить плагины для проверки правописания (русский и английский словари).
   - **Совместимость:** Конфигурация по большей части стандартная и скорее всего подойдет для других IDE на базе VS Code.
+- **MCP:** Для Antigravity также добален готовый конфиг MCP-сервера Contex7 (в него надо только вручную вставить пользовательских API-ключ, вместо ключа в конфиге ссылка на страница, где его можно получить).
 
 #### Шаблоны (Templates) 📄
 Коллекция заготовок и скелетов файлов для быстрого создания новых документов.
