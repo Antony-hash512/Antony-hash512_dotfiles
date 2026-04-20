@@ -1,5 +1,8 @@
 # My Dotfiles / Мои дотфайлы
 
+[![Dotfiles](https://img.shields.io/badge/GNU/Linux-dotfiles-blue.svg)](https://github.com/topics/dotfiles) 
+
+
 [English](#english) | [Русский](#русский)
 
 ---
