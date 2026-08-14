@@ -97,6 +97,10 @@ Configuration for the MPV media player.
 - Includes optimized settings for high-quality video playback and UI improvements.
 - **Scripts:** Includes `force_external.lua` (in `.config/mpv/scripts/`), which allows automatically loading matching subtitles and audio tracks from external subdirectories.
 
+#### Hyprland 💧
+My desktop setup based on Hyprland. Uses the new Lua config syntax, which will be required starting from version 0.57.
+A complete list of packages from extra and AUR required for my setup, as well as additional configs if anything was missed, will be added later.
+
 #### Gemini + Antigravity 🤖
 Context and memory files for AI Assistants (Gemini, Antigravity).
 - **Path:** `.gemini/GEMINI.md`
@@ -215,8 +219,8 @@ stow */
 - Включает оптимизированные настройки для высокого качества воспроизведения и улучшения интерфейса.
 - **Скрипты:** Включен скрипт `force_external.lua` (в `.config/mpv/scripts/`), который позволяет автоматически подгружать субтитры и аудиодорожки из внешних подкаталогов.
 
-#### Hyprland
-Сборка моего рабочего стола на базе Hyprland. Задёствован новый lua-синтаксис конфига, который будет обязателен начиная с версии 0.57.
+#### Hyprland 💧
+Сборка моего рабочего стола на базе Hyprland. Задействован новый lua-синтаксис конфига, который будет обязателен начиная с версии 0.57.
 Полный список пакетов из extra и aur, которые необходимо установить для моей сборки и дополнительные конфиги, если я что-то пропустил добавлю чуть позже.
 
 
