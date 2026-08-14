@@ -1,0 +1,28 @@
+sudo systemctl start <сервис> - запустить сервис
+sudo systemctl stop <сервис> - остановить сервис
+sudo systemctl restart <сервис> - перезапустить сервис
+sudo systemctl enable <сервис> - включить сервис при загрузке системы
+sudo systemctl disable <сервис> - отключить сервис при загрузке системы
+sudo systemctl status <сервис> - показать статус сервиса
+sudo systemctl is-active <сервис> - показать, запущен ли сервис
+sudo systemctl is-enabled <сервис> - показать, включен ли сервис при загрузке системы
+sudo systemctl list-units - показать все запущенные сервисы
+sudo systemctl list-units -l - показать все запущенные сервисы с подробной информацией
+sudo systemctl list-units --failed - показать все запущенные сервисы с ошибками
+sudo systemctl list-units --type=service - показать все сервисы
+sudo systemctl list-units --type=service -l - показать все сервисы с подробной информацией
+sudo systemctl list-units --type=service --failed - показать все сервисы с ошибками
+sudo systemctl show <сервис> - показать подробную информацию о сервисе
+sudo systemctl show -p ActiveState <сервис> - показать статус сервиса
+sudo systemctl show -p LoadState <сервис> - показать загрузочное состояние сервиса
+sudo systemctl show -p SubState <сервис> - показать подсостояние сервиса
+sudo systemctl show -p ActiveEnterTimestamp <сервис> - показать время активации сервиса
+sudo systemctl show -p ActiveExitTimestamp <сервис> - показать время деактивации сервиса
+sudo systemctl show -p ActiveStateTimestamp <сервис> - показать время последнего изменения статуса сервиса
+sudo systemctl show -p LoadStateTimestamp <сервис> - показать время последнего изменения загрузочного состояния сервиса
+sudo systemctl show -p SubStateTimestamp <сервис> - показать время последнего изменения подсостояния сервиса
+sudo systemctl show -p Description <сервис> - показать описание сервиса
+sudo systemctl show -p Documentation <сервис> - показать документацию сервиса
+sudo systemctl show -p DefaultInstance <сервис> - показать имя экземпляра сервиса по умолчанию
+sudo systemctl show -p FragmentPath <сервис> - показать путь к файлу фрагмента конфигурации сервиса
+sudo systemctl show -p FragmentPath <сервис> - показать путь к файлу фрагмента конфигурации сервиса

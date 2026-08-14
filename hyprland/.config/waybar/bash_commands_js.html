@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Основные команды терминала</title>
+    <style>
+        body {
+            background-color: #303030;
+            color: #D6D6D6;
+            font-family: sans-serif;
+        }
+        h2 {
+            color: #D6D6D6;
+        }
+        table {
+            color: #D6D6D6;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td {
+            padding: 8px;
+            border: 1px solid #505050;
+            font-family: monospace;
+            font-size: 16px;
+        }
+        pre {
+            margin: 0;
+            font-family: monospace;
+            text-align: right;
+        }
+        
+        .copy-button {
+            background-color: #404040;
+            border: none;
+            color: #D6D6D6;
+            padding: 2px 6px;
+            cursor: pointer;
+            font-size: 12px;
+            border-radius: 3px;
+            margin-left: 8px;
+        }
+        
+        .copy-button:hover {
+            background-color: #505050;
+        }
+        
+        .pre-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    </style>
+    
+    <script>
+        function copyToClipboard(element) {
+            const text = element.previousElementSibling.textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                const button = element;
+                button.textContent = 'Скопировано!';
+                setTimeout(() => {
+                    button.textContent = 'Копировать';
+                }, 1000);
+            });
+        }
+    </script>
+</head>
+<body>
+<table>
+<tr><td>🪟+Q или Ctrl+Alt+T</td><td>запуск нового окна терминала</td></tr>
+</table>
+
+<h2>Полезные комбинации клавиш терминала:</h2>
+<table>
+<tr><td>комбинация</td><td>результат</td></tr>
+<tr><td>Enter</td><td>выполнить введённую команду</td></tr>
+<tr><td>Ctrl+C</td><td>прервать текущую не завершённую команду</td></tr>
+<tr><td>Ctrl+L</td><td>очистить экран</td></tr>
+<tr><td>Ctrl+U</td><td>стереть введённую строку</td></tr>
+<tr><td>Ctrl+D</td><td>Байт-код конца файла, например для выхода из python. Если никакая команда в этот момент не испольняется это приведёт к закрытию терминала.</td></tr>
+<tr><td>Tab</td><td>автодополнение команд и путей</td></tr>
+<tr><td>↑↓</td><td>просмотр истории команд</td></tr>
+<tr><td>Ctrl+Shift+C</td><td>копировать выделенный текст</td></tr>
+<tr><td>Ctrl+Shift+V</td><td>вставить скопированный текст</td></tr>
+</table>
+
+<h2>Основные обозначения:</h2>
+<table>
+<tr><td>.</td><td>текущая директория</td></tr>
+<tr><td>..</td><td>родительская директория (выше на один уровень по иерархии)</td></tr>
+<tr><td>~</td><td>домашняя директория (обычно /home/имя_пользователя)</td></tr>
+<tr><td>/</td><td>корневая директория установки системы</td></tr>
+</table>
+
+<h2>Примеры интересных команд:</h2>
+<table>
+<tr><td><div class="pre-container">команда</td><td>результат</td></tr>
+<tr><td><div class="pre-container"><pre>fastfetch</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>показать информацию о системе с логотипом в виде ASCII-арта</td></tr>
+<tr><td><div class="pre-container"><pre>cowsay &lt;текст&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>показать текст в виде ASCII-арта коровы</td></tr>
+<tr><td><div class="pre-container"><pre>figlet &lt;текст&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>показать текст в виде ASCII-арта больших букв</td></tr>
+</table>
+
+<h2>Основные команды терминала для начинающих:</h2>
+<table>
+<tr><td><pre>команда</pre></td><td>результат</td></tr>
+<tr><td><div class="pre-container"><pre>man &lt;команда&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>показать руководство по команде (выход: q)</td></tr>
+<tr><td><div class="pre-container"><pre>man kitty</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>как пример, руководство по эмулятору терминала kitty</td></tr>
+<tr><td><div class="pre-container"><pre>ls</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>показать содержимое текущей директории</td></tr>
+<tr><td><div class="pre-container"><pre>ls -l</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>показать содержимое текущей директории в длинном формате</td></tr>
+<tr><td><div class="pre-container"><pre>ls -a</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>показать все файлы, включая скрытые</td></tr>
+<tr><td><div class="pre-container"><pre>ls -la</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>показать все файлы, включая скрытые, в длинном формате</td></tr>
+<tr><td><div class="pre-container"><pre>cd &lt;директория&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>перейти в указанную директорию</td></tr>
+<tr><td><div class="pre-container"><pre>mc</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>двухпанельный файловый менеджер Midnight Commander (выход: f10)</td></tr>
+<tr><td><div class="pre-container"><pre>htop</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>системный монитор (выход: f10)</td></tr>
+<tr><td><div class="pre-container"><pre>btop</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>альтернативный системный монитор (выход: q)</td></tr>
+<tr><td><div class="pre-container"><pre>ping google.com</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>проверить доступность интернета (выход: Ctrl+C)</td></tr>
+<tr><td><div class="pre-container"><pre>wget &lt;интернет-ссылка&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>скачать файл из интернета</td></tr>
+<tr><td><div class="pre-container"><pre>curl &lt;интернет-ссылка&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>скачать файл из интернета</td></tr>
+<tr><td><div class="pre-container"><pre>curl -O &lt;интернет-ссылка&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>скачать файл из интернета и сохранить с оригинальным названием</td></tr>
+<tr><td><div class="pre-container"><pre>mkdir &lt;имя&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>создать новую директорию</td></tr>
+<tr><td><div class="pre-container"><pre>mkdir -p &lt;путь&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>создать директорию по указанному пути, не выдавая ошибку, если она уже существует; если нет промежуточных директорий, то создать их</td></tr>
+<tr><td><div class="pre-container"><pre>rm &lt;файл&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>удалить файл</td></tr>
+<tr><td><div class="pre-container"><pre>rmdir &lt;директория&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>удалить директорию (если она пустая)</td></tr>
+<tr><td><div class="pre-container"><pre>rm -r &lt;директория&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>удалить директорию и всё её содержимое</td></tr>
+<tr><td><div class="pre-container"><pre>cp &lt;источник&gt; &lt;назначение&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>копировать файл</td></tr>
+<tr><td><div class="pre-container"><pre>mv &lt;источник&gt; &lt;назначение&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>переместить/переименовать файл</td></tr>
+<tr><td><div class="pre-container"><pre>touch &lt;файл&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>создать пустой файл</td></tr>
+<tr><td><div class="pre-container"><pre>echo "&lt;текст&gt;" &gt;&gt; &lt;файл&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>дописать текст в конец текстового файла</td></tr>
+<tr><td><div class="pre-container"><pre>echo "&lt;текст&gt;" &gt; &lt;файл&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>полностью перезаписать текстовый файл</td></tr>
+<tr><td><div class="pre-container"><pre>cat &lt;файл&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>показать содержимое файла</td></tr>
+<tr><td><div class="pre-container"><pre>bat &lt;файл&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>показать содержимое файла в красивом формате</td></tr>
+<tr><td><div class="pre-container"><pre>nano &lt;файл&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>открыть текстовый редактор (выход: Ctrl+X, Y, Enter)</td></tr>
+<tr><td><div class="pre-container"><pre>vim &lt;файл&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>продвинутый текстовый редактор для программистов или опытных пользователей (выход: :q)</td></tr>
+<tr><td><div class="pre-container"><pre>xed &lt;файл&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>открыть файл в графическом текстовом редакторе</td></tr>
+<tr><td><div class="pre-container"><pre>&lt;команда&gt; &</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>запустить команду в фоновом режиме (например: xed &)</td></tr>
+<tr><td><div class="pre-container"><pre>lsblk</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>показать схему устройств ПЗУ и разделов на них</td></tr>
+<tr><td><div class="pre-container"><pre>tar -cf &lt;архив&gt; &lt;файлы&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>создать архив</td></tr>
+<tr><td><div class="pre-container"><pre>tar -xvf &lt;архив&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>распаковать архив</td></tr>
+<tr><td><div class="pre-container"><pre>tar -czf &lt;архив&gt;.tar.gz &lt;файлы&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>создать сжатый tar.gz архив</td></tr>
+<tr><td><div class="pre-container"><pre>tar -xzf &lt;архив&gt;.tar.gz</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>распаковать tar.gz архив</td></tr>
+<tr><td><div class="pre-container"><pre>tar -tzf &lt;архив&gt;.tar.gz</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>просмотреть содержимое tar.gz архива без распаковки</td></tr>
+<tr><td><div class="pre-container"><pre>7z a &lt;архив&gt; &lt;файлы&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>создать архив с помощью 7-zip</td></tr>
+<tr><td><div class="pre-container"><pre>7z x &lt;архив&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>распаковать архив с помощью 7-zip</td></tr>
+<tr><td><div class="pre-container"><pre>7z a --mx=9 &lt;архив&gt; &lt;файлы&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>создать архив с максимальным сжатием с помощью 7-zip (если объём данных большой, рекомендуется выйти из графического интерфейса и/или включить скорость вентилятора на максимум перед выполнением этой команды)</td></tr>
+<tr><td><div class="pre-container"><pre>tar cf - &lt;директория&gt; | 7z a -si имя_архива.tar.7z</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>создать архив tar.7z, который поддерживает атребуты файловов</td></tr>
+<tr><td><div class="pre-container"><pre>cat /etc/shells</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>посмотреть список оболочек, установленных в системе</td></tr>
+<tr><td><div class="pre-container"><pre>chsh -s &lt;путь к оболочке&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>Сменить оболочку, которая будет использоваться по умолчанию после следующего входа в систему.</td></tr>
+<tr><td><div class="pre-container"><pre>fastfetch</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>показать информацию о системе</td></tr>
+<tr><td><div class="pre-container"><pre>history</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>показать историю команд</td></tr>
+<tr><td><div class="pre-container"><pre>!&lt;номер команды&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>ввод команды из истории по номеру</td></tr>
+<tr><td><div class="pre-container"><pre>clear</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>очистить экран терминала</td></tr>
+<tr><td><div class="pre-container"><pre>tree</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>показать структуру директорий</td></tr>
+<tr><td><div class="pre-container"><pre>pwd</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>показать текущий путь</td></tr>
+<tr><td><div class="pre-container"><pre>links</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>текстовый веб-браузер (g - открыть адресную строку, q - выход)</td></tr>
+<tr><td><div class="pre-container"><pre>chmod +x &lt;файл&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>сделать файл исполняемым</td></tr>
+<tr><td><div class="pre-container"><pre>ln -s &lt;источник&gt; &lt;назначение&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>создать символическую ссылку</td></tr>
+<tr><td><div class="pre-container"><pre>ln -T &lt;источник&gt; &lt;назначение&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>создать жесткую ссылку</td></tr>
+<tr><td><div class="pre-container"><pre>pkill &lt;программа&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>завершить процесс по его названию</td></tr>
+<tr><td><div class="pre-container"><pre>kill -9 &lt;PID&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>завершить процесс по его PID</td></tr>
+<tr><td><div class="pre-container"><pre>killall &lt;программа&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>завершить все процессы по его названию</td></tr>
+<tr><td><div class="pre-container"><pre>grep &lt;текст&gt; &lt;файл&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>найти текст в файле</td></tr>
+<tr><td><div class="pre-container"><pre>df -h</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>показать свободное место на дисках</td></tr>
+<tr><td><div class="pre-container"><pre>reboot</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>перезагрузить компьютер</td></tr>
+<tr><td><div class="pre-container"><pre>poweroff</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>выключить компьютер</td></tr>
+<tr><td><div class="pre-container"><pre>shutdown now</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>выключить компьютер</td></tr>
+<tr><td><div class="pre-container"><pre>sudo &lt;команда&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>выполнить команду с правами администратора</td></tr>
+<tr><td><div class="pre-container"><pre>sudo pacman -Syu</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>обновить список пакетов и систему</td></tr>
+<tr><td><div class="pre-container"><pre>sudo pacman -S &lt;пакет&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>установить программу из официальных репозиториев</td></tr>
+<tr><td><div class="pre-container"><pre>pacman -Ss &lt;пакет&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>найти описание пакета в репозиториях</td></tr>
+<tr><td><div class="pre-container"><pre>paru -S &lt;пакет&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>установить программу из AUR (пользовательский репозиторий Arch Linux)</td></tr>
+<tr><td><div class="pre-container"><pre>paru -Ss &lt;пакет&gt;</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>найти описание пакета в AUR</td></tr>
+<tr><td><div class="pre-container"><pre>sudo lshw</pre><button class="copy-button" onclick="copyToClipboard(this)">Копировать</button></td><td>показать информацию о железе</td></tr>
+</table>
+
+</body>
+</html>
