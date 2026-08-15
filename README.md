@@ -101,6 +101,8 @@ Configuration for the MPV media player.
 My desktop setup based on Hyprland. Uses the new Lua config syntax, which will be required starting from version 0.57.
 A complete list of packages from extra and AUR required for my setup, as well as additional configs if anything was missed, will be added later.
 
+> ⚠️ In `waybar` package version 0.15.0-2 from extra, switching workspaces via left-click does not work yet when using the new Lua Hyprland config syntax. This can be resolved by building the `waybar-git` package from AUR until the recent commit fixing this issue reaches the `waybar` package in extra.
+
 #### Gemini + Antigravity 🤖
 Context and memory files for AI Assistants (Gemini, Antigravity).
 - **Path:** `.gemini/GEMINI.md`
@@ -222,6 +224,8 @@ stow */
 #### Hyprland 💧
 Сборка моего рабочего стола на базе Hyprland. Задействован новый lua-синтаксис конфига, который будет обязателен начиная с версии 0.57.
 Полный список пакетов из extra и aur, которые необходимо установить для моей сборки и дополнительные конфиги, если я что-то пропустил добавлю чуть позже.
+
+> ⚠️ в версии пакета `waybar` 0.15.0-2 и из extra пока что не работают переключения рабочих столов по ЛКМ при исползовании нового LUA-синтаксиса конфига Hyprland. Решается сборкой пакета `waybar-git` из AUR до как недавний коммит, который это исправляет доберётся до пакет `waybar` из extra. 
 
 
 #### Gemini + Antigravity 🤖
