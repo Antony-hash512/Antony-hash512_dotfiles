@@ -51,6 +51,13 @@ stow */
 My desktop setup based on Hyprland. Uses the new Lua config syntax, which will be required starting from version 0.57.
 A complete list of packages from extra and AUR required for my setup, as well as additional configs if anything was missed, will be added later.
 
+**Included configs:**
+- **Hyprland** (`.config/hypr/`): `hyprland.lua`, `myColors.lua`, `autostart.sh`
+- **Waybar** (`.config/waybar/`): `config.jsonc`, `style.css`, and helper scripts/cheatsheets (`show_shortcuts.sh`, `show_shortcuts.txt`, `systemd.txt`, `bash_commands_js.html`)
+- **Wofi** (`.config/wofi/`): `config`, `style.css`
+- **Wlogout** (`.config/wlogout/`): `layout`
+- **Kitty** (`.config/kitty/`): `kitty.conf`
+
 #### Fish 🐟
 
 **Nuances:**
@@ -172,6 +179,13 @@ stow */
 #### Hyprland 💧
 Сборка моего рабочего стола на базе Hyprland. Задействован новый lua-синтаксис конфига, который будет обязателен начиная с версии 0.57.
 Полный список пакетов из extra и aur, которые необходимо установить для моей сборки и дополнительные конфиги, если я что-то пропустил добавлю чуть позже.
+
+**Содержимое модуля (конфиги):**
+- **Hyprland** (`.config/hypr/`): `hyprland.lua`, `myColors.lua`, `autostart.sh`
+- **Waybar** (`.config/waybar/`): `config.jsonc`, `style.css`, а также вспомогательные скрипты и шпаргалки (`show_shortcuts.sh`, `show_shortcuts.txt`, `systemd.txt`, `bash_commands_js.html`)
+- **Wofi** (`.config/wofi/`): `config`, `style.css`
+- **Wlogout** (`.config/wlogout/`): `layout`
+- **Kitty** (`.config/kitty/`): `kitty.conf`
 
 #### Fish 🐟
 
