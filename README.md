@@ -47,6 +47,15 @@ stow */
 
 ### Modules Description & Nuances
 
+- [Hyprland 💧](#hyprland-)
+- [Fish 🐟](#fish-)
+- [Git 🐙](#git-)
+- [Neovim 📝](#neovim-)
+- [MPV 🎬](#mpv-)
+- [Gemini + Antigravity 🤖](#gemini--antigravity-)
+- [Templates 📄](#templates-)
+- [Legacy 🕰️](#legacy-)
+
 #### Hyprland 💧
 My desktop setup based on Hyprland. Uses the new Lua config syntax, which will be required starting from version 0.57.
 A complete list of packages from extra and AUR required for my setup, as well as additional configs if anything was missed, will be added later.
@@ -175,6 +184,15 @@ stow */
 ```
 
 ### Описание модулей и нюансы
+
+- [Hyprland 💧](#hyprland--1)
+- [Fish 🐟](#fish--1)
+- [Git 🐙](#git--1)
+- [Neovim 📝](#neovim--1)
+- [MPV 🎬](#mpv--1)
+- [Gemini + Antigravity 🤖](#gemini--antigravity--1)
+- [Шаблоны (Templates) 📄](#шаблоны-templates-)
+- [Legacy 🕰️](#legacy--1)
 
 #### Hyprland 💧
 Сборка моего рабочего стола на базе Hyprland. Задействован новый lua-синтаксис конфига, который будет обязателен начиная с версии 0.57.
