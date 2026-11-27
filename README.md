@@ -4,9 +4,11 @@
 
 
 - [English](#english)
-  - [Hyprland 💧](#hyprland-) / [Fish 🐟](#fish-) / [Git 🐙](#git-) / [Neovim 📝](#neovim-) / [MPV 🎬](#mpv-) / [Gemini + Antigravity 🤖](#gemini--antigravity-) / [Templates 📄](#templates-) / [Legacy 🕰️](#legacy-)
+  - [Hyprland 💧](#hyprland-) | [Fish 🐟](#fish-) | [Git 🐙](#git-) | [Neovim 📝](#neovim-) | [MPV 🎬](#mpv-)
+  - [Gemini + Antigravity 🤖](#gemini--antigravity-) | [Templates 📄](#templates-) | [Legacy 🕰️](#legacy-)
 - [Русский](#русский)
-  - [Hyprland 💧](#hyprland--1) / [Fish 🐟](#fish--1) / [Git 🐙](#git--1) / [Neovim 📝](#neovim--1) / [MPV 🎬](#mpv--1) / [Gemini + Antigravity 🤖](#gemini--antigravity--1) / [Шаблоны (Templates) 📄](#шаблоны-templates-) / [Legacy 🕰️](#legacy--1)
+  - [Hyprland 💧](#hyprland--1) | [Fish 🐟](#fish--1) | [Git 🐙](#git--1) | [Neovim 📝](#neovim--1) | [MPV 🎬](#mpv--1)
+  - [Gemini + Antigravity 🤖](#gemini--antigravity--1) | [Шаблоны 📄](#шаблоны-templates-) | [Legacy 🕰️](#legacy--1)
 
 
 ---
