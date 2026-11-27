@@ -72,7 +72,7 @@ button:hover {
     background-color: #eb4d4b;
 }
 
-#mode {
+#submap {
     background-color: #64727D;
     box-shadow: inset 0 -3px #ffffff;
 }
@@ -87,9 +87,9 @@ button:hover {
 #network,
 #pulseaudio,
 #wireplumber,
-#custom-media,
+#mpris,
 #tray,
-#mode,
+#submap,
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
@@ -212,17 +212,17 @@ label:focus {
     background-color: #f53c3c;
 }
 
-#custom-media {
+#mpris {
     background-color: #66cc99;
     color: #2a5c45;
     min-width: 100px;
 }
 
-#custom-media.custom-spotify {
+#mpris.custom-spotify {
     background-color: #66cc99;
 }
 
-#custom-media.custom-vlc {
+#mpris.custom-vlc {
     background-color: #ffa000;
 }
 
